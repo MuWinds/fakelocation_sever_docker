@@ -112,4 +112,4 @@ RUN mkdir -p /usr/src/app
 ENV FAKEWORK /usr/src/app
 WORKDIR $FAKEWORK
 RUN cd /usr/src/app && git clone https://github.com/BobH233/FakeLocation-server.git . && npm install 
-ENTRYPOINT ["node", "/usr/src/app/node.js"]  
+ENTRYPOINT ["node", "/usr/src/app/index.js"]
